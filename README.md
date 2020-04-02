@@ -1,2 +1,46 @@
-# CNN-Tutorial-with-App
- This kernel was prepared within the scope of handwriting recognition contest at Kaggle platform using the Kannada MNIST data set and in the competition, it managed to be among the top 2%.
+# A Simple CNN Tutorial with App.
+**Benan AKCA** <a id="0"></a>
+
+![brain.jpg](https://www.sciencemag.org/sites/default/files/styles/article_main_large/public/images/cc_0304careers-digitalbrain_16x9.jpg?itok=80mznXEe)
+
+1. [__INTRODUCTION__](#1)
+    
+2. [__CONVOLUTIONAL NEURAL NETWORKS__](#100)
+    1. [__Convolution Layer__](#110)
+        * [Steps of Convolution Operation](#111)
+        * [Stride](#112)
+        * [An Example of Convolution Operation](#113)
+        * [Why Do We Use Filters?](#114)       
+    2. [__Padding__](#130)
+        * [Why do we use Padding?](#131)
+        * [Equation of Calculating Output Dimension](#132)
+        * [Types of Padding in Keras](#133)
+    3. [__Pooling Layer__](#150)
+        * [Hyper Parameters of Pooling Operation](#151)
+        * [Why do we use Pooling?](#152)
+        * [Types of Pooling in Keras](#153)
+    4. [__Batch Normalization Layer__](#160)
+    5. [__Drop Out Layer__](#180)
+    
+3. [__APPLICATION WITH CNN__](#200)
+    1. [__Import Modules__](#210)
+    2. [__Understanding the Data__](#220)
+    3. [__Data Preprocessing__](#230)
+        * [Normalizing the Data](#231)
+        * [Train and Test Splitting](#232)
+        * [Reshape Data to Appropriate Sizes ](#233)
+    4. [__Building and Training a CNN Model__](#250)  
+        * [Model - Build](#251)
+        * [Model - Compile](#252)
+            * [Categorical Cross Entropy](#253)
+            * [Optimizer](#255)
+            * [On-the-Fly Data Augmentation](#257)
+        * [Model - Fit](#259)
+    5. [__Evaluation of the Model__](#270) 
+        * [Accuracy and Loss Curves](#271) * 
+        * [Test Set Accuracy Score](#272)
+        * [Confusion Matrix](#273)
+        * [F1 Score Calculation](#274)
+        * [Evaluate with Another Dataset](#275)
+        * [Submit for Competition](#275)
+6. [__CONCLUSION__](#290)
